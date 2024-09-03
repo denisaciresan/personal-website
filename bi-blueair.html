@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Analiză BI</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+  
+
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand font-tertiary h3" href="index.html">
+      <img src="images/logo.png" alt="Myself" style="width: 125px; height: auto;">
+  </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">about</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- page title -->
+<section class="page-title bg-primary position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="text-white font-tertiary">Power BI</h1>
+      </div>
+    </div>
+  </div>
+  <!-- background shapes -->
+  <img src="images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
+  <img src="images/illustrations/leaf-pink-round.png" alt="illustrations" class="bg-shape-2">
+  <!-- <img src="images/illustrations/dots-cyan.png" alt="illustrations" class="bg-shape-3"> -->
+  <img src="images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
+  <img src="images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-5">
+  <img src="images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-6">
+  <img src="images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-7">
+</section>
+<!-- /page title -->
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="font-tertiary mb-5">Analiză detaliată a satisfacției clienților și performanței zborurilor</h3>
+        <p class="font-secondary">Data realizării: Februarie 2024</p>
+        <div class="content">
+          <strong>Această analiză a fost realizată cu date fictive, luate de pe platforma Kaggle. Logo-ul a fost utilizat doar pentru partea estetică, pentru crearea vizualizărilor în funcție de culorile acestuia.</strong>
+          <strong>Această analiză explorează satisfacția clienților și eficiența operațională a unei companii aeriene fictive, evidențiind tendințele de satisfacție pe categorii de vârstă, gen și tip de călătorie, precum și procentajul zborurilor întârziate și loialitatea clienților. Rezultatele indică necesitatea unor îmbunătățiri în procedurile de zbor și întreținere pentru a reduce întârzierile și a crește satisfacția generală.</strong>
+      
+          <!-- Primul Dashboard -->
+           
+          <img src="images/blog/blueair/d1.png" alt="Dashboard 1" class="img-fluid rounded float-left mr-5 mb-4">
+          <p>
+            În cadrul primului dashboard, putem observa următoarele:
+          </p>
+          <ul>
+            <li>- Într-un Donut Chart, cei mai loiali clienți au fost cei care au călătorit în scop personal la clasa Business (99,91%), iar cel mai mic procent de clienți loiali a fost înregistrat la clasa Economy, scopul călătoriei fiind cel de Business (46,85%).</li>
+            <li>- În graficurile de tip Card, se poate observa că:
+              <ul>
+                <li> * 81,69% dintre clienți au călătorit și în trecut la această companie;</li>
+                <li> * 33% din zboruri au avut întârzieri.</li>
+              </ul>
+            </li>
+            <li>- În tabelul din partea dreaptă, se poate vedea satisfacția medie pe vârstă și gen.</li>
+            <li>- În Line Chart-ul din stânga, jos, este evidențiată satisfacția pe fiecare categorie de distanță:
+              <ul>
+                <li> * Cele mai satisfăcătoare zboruri sunt cele cu o distanță mai lungă, având media satisfacției de 4.54.</li>
+              </ul>
+            </li>
+            <li>- În graficul de tip Bar Chart, se poate observa satisfacția medie pentru fiecare clasă (Business, Economy Plus, Economy).</li>
+          </ul>
+
+          <!-- Al doilea dashboard -->
+          <img src="images/blog/blueair/d2.png" alt="Dashboard 2" class="img-fluid rounded float-left mr-5 mb-4">
+          <p>
+            În cadrul celui de-al doilea dashboard, putem observa următoarele:
+          </p>
+          <ul>
+            <li>- Diferența dintre satisfacția pentru clasa Business și Economy este de 1.01, iar alăturat, satisfacția medie pentru fiecare gen.</li>
+            <li>- În graficul Gauge se poate observa că numărul clienților care au mai călătorit la această companie aeriană este de 106K.</li>
+            <li>-	Categoria de varsta cu cea mai mare medie a satisfactiei este 39-60, avand media peste 4, iar cea mai nesatisfacuta categorie de varsta este cea 7-16 ani.</li>
+            <li>- Cele mai satisfăcătoare zboruri sunt pentru clasa Business.</li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- footer -->
+<footer class="bg-dark footer-section py-4">
+  <div class="container">
+    <div class="row">
+      <!-- Navigation Links -->
+      <div class="col-md-4 col-12 text-center mb-4 mb-md-0">
+        <h5 class="text-light">Pagini</h5>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-white" href="index.html">Home</a></li>
+          <li class="mb-3"><a class="text-white" href="about.html">About</a></li>
+          <li class="mb-3"><a class="text-white" href="portfolio.html">Portfolio</a></li>
+          <li class="mb-3"><a class="text-white" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Social Links and Logo -->
+      <div class="col-md-4 col-12 text-center mb-4 mb-md-0">
+        <img src="images/favicon.png" alt="Myself" style="width: 125px; height: auto;" class="mb-3">
+        <ul class="list-inline social-icons">
+          <li class="list-inline-item"><a class="text-white" href="https://ro.linkedin.com/in/denisa-cire%C8%99an-973750267"><i class="ti-linkedin"></i></a></li>
+          <li class="list-inline-item"><a class="text-white" href="https://ro.pinterest.com/denisa_ciresan/"><i class="ti-pinterest"></i></a></li>
+          <li class="list-inline-item"><a class="text-white" href="mailto:ciresan.denisa14@gmail.com"><i class="ti-email"></i></a></li>
+        </ul>
+      </div>
+      <!-- To Top Button -->
+      <div class="col-md-4 col-12 text-md-right text-center">
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="btn btn-primary mt-4">To Top</button>
+      </div>
+    </div>
+  </div>
+  <div class="border-top text-center border-dark py-3">
+    <p class="mb-0 text-light">Copyright ©<script>
+        var CurrentYear = new Date().getFullYear();
+        document.write(CurrentYear);
+      </script>Denisa Cireșan</p>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- filter -->
+<script src="plugins/shuffle/shuffle.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Despre mine</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+  
+
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand font-tertiary h3" href="index.html">
+      <img src="images/logo.png" alt="Myself" style="width: 125px; height: auto;">
+  </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">about</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- page title -->
+<section class="page-title-alt bg-primary position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-white font-tertiary">Despre mine</h1>
+      </div>
+    </div>
+  </div>
+  <!-- background shapes -->
+  <img src="images/illustrations/leaf-bg-top.png" alt="illustrations" class="bg-shape-1 w-100">
+  <img src="images/illustrations/dots-group-sm.png" alt="illustrations" class="bg-shape-2">
+  <img src="images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-3">
+  <img src="images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
+  <img src="images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-5">
+  <img src="images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-6">
+</section>
+<!-- /page title -->
+
+<!-- about -->
+<section class="section pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <p>Sunt pasionată de analiza datelor și de utilizarea acestora pentru a descoperi informații valoroase. Îmi place să folosesc SQL pentru manipularea eficientă a bazelor de date și Power BI pentru crearea de dashboard-uri interactive și rapoarte vizuale. De asemenea, explorez și aplic algoritmi de învățare automată în Python pentru a identifica pattern-uri în date. Caut mereu oportunități de a învăța și de a aplica tehnologii noi pentru a aduce inovație în analiza și gestionarea datelor.</p>
+      </div>
+      <div class="col-md-4 text-center drag-lg-top">
+        <div class="shadow-down mb-4">
+          <img src="images/about/author.jpg" alt="author" class="img-fluid w-100 rounded-lg border-thick border-white">
+        </div>
+        <h4>Denisa Cireșan</h4>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about -->
+
+
+<!-- Work Process -->
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Parcurs</h2>
+      </div>
+      <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3" onclick="showMessage('licenta')">
+        <div class="">
+          <img src="images/icons/plan.png" class="mb-4" alt="icon">
+          <h4 class="mb-4">Studii de licență - Informatică economică</h4>
+          <h5 class="mb-4">Facultatea de Economie și de Administrare a Afacerilor, UVT - Timișoara</h5>
+          <p>2021-2024</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3" onclick="showMessage('dataEngineering')">
+        <img src="images/icons/design.png" class="mb-4" alt="icon">
+        <h4 class="mb-4">Data Engineering - Working Student</h4>
+        <h5 class="mb-4">NTT Data România</h5>
+        <p>Oct 2023 - prezent</p>
+      </div>
+      <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3" onclick="showMessage('master')">
+        <img src="images/icons/print.png" class="mb-4" alt="icon">
+        <h4 class="mb-4">Studii de master - Sisteme informațonale pentru afaceri</h4>
+        <h5 class="mb-4">Facultatea de Economie și de Administrare a Afacerilor, UVT - Timișoara</h5>
+        <p>2024 - 2026</p>
+      </div>
+    </div>
+    <div id="messageContainer" class="text-center mt-4"></div>
+  </div>
+</section>
+
+<script>
+  function showMessage(section) {
+    var message = '';
+    if (section === 'licenta') {
+      message = 'Proficientă în PowerBI și suita Microsoft 365\n' +
+              'Cunoștințe intermediare în PL/SQL, T-SQL, MariaDB, R și WinForm\n' +
+              'Analiza datelor: colectare, interpretare, manipulare și analiză\n' +
+              'Abilități de bază în C++, Visio, Web Scraping (UiPath StudioX), Învățare Automată\n' +
+              'Crearea site-urilor web folosind HTML, PHP, CSS, WordPress, Joomla și UiKit';
+    } else if (section === 'dataEngineering') {
+      message = `Învățarea limbajelor PL/SQL, R și Python
+Crearea de dashboard-uri interactive și măsuri în PowerBI
+Utilizarea algoritmilor de învățare automată în R și Python și crearea de grafice interactive
+Crearea DAG-urilor folosind Docker și Airflow`;    } else if (section === 'master') {
+      message = 'Studii de master în Sisteme Informaționale pentru Afaceri la UVT Timișoara (2024-2026).';
+    }
+    document.getElementById('messageContainer').innerText = message;
+  }
+</script>
+
+
+<!-- skills -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Abilități</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="client-logo-slider d-flex align-items-center justify-content-center flex-wrap">
+          <div class="skill-card text-center d-block outline-0 p-4 bg-primary-pastel text-white">
+            Vizualizarea datelor: Power BI
+          </div>
+          <div class="skill-card text-center d-block outline-0 p-4 bg-secondary-pastel text-dark">
+            Managementul bazelor de date: PL/SQL, T-SQL, MariaDB
+          </div>
+          <div class="skill-card text-center d-block outline-0 p-4 bg-secondary-pastel text-dark">
+            Analiza datelor
+          </div>
+          <div class="skill-card text-center d-block outline-0 p-4 bg-success-pastel text-dark">
+            Suita Microsoft: Excel, Word, PowerPoint, Outlook, Access, Project, Visio
+          </div>
+          <div class="skill-card text-center d-block outline-0 p-4 bg-secondary-pastel text-dark">
+            Canva
+          </div>
+          <div class="skill-card text-center d-block outline-0 p-4 bg-danger-pastel text-dark">
+            Gândire critică și analitică
+          </div>
+          <div class="skill-card text-center d-block outline-0 p-4 bg-warning-pastel text-dark">
+            Învățare continuă
+          </div>
+          <div class="skill-card text-center d-block outline-0 p-4 bg-info-pastel text-dark">
+            Managementul timpului
+          </div>
+          <div class="skill-card text-center d-block outline-0 p-4 bg-dark-pastel text-dark">
+            Abilități organizatorice
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /skills -->
+
+<!-- certificari -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Certificări</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap justify-content-center">
+        <a href="https://www.udemy.com/certificate/UC-3e0e41dc-0c22-4f6a-9609-b3d3f1363350/" class="certification-card text-center d-block p-4 m-2 bg-primary-pastel text-white rounded">
+          Introduction to Business Analytics
+        </a>
+        <a href="https://www.udemy.com/certificate/UC-660a66bf-ea8c-4af6-af28-480a76de7caf/" class="certification-card text-center d-block p-4 m-2 bg-secondary-pastel text-dark rounded">
+          Mastering Data Modeling Fundamentals
+        </a>
+        <a href="https://www.udemy.com/certificate/UC-62bb9e67-b4f8-48dc-a7e9-b94c4bd18247/" class="certification-card text-center d-block p-4 m-2 bg-success-pastel text-dark rounded">
+          Mastering DAX Calculations in Microsoft Power BI
+        </a>
+        <a href="https://www.udemy.com/certificate/UC-c9f2fe67-7ec4-4a77-8807-1758b22bc8a2/" class="certification-card text-center d-block p-4 m-2 bg-danger-pastel text-dark rounded">
+          Microsoft Power BI Desktop for Business Intelligence (2023)
+        </a>
+        <a href="https://credentials.uipath.com/afc8a29a-6ae6-4cd1-bb9d-d28621429cc9" class="certification-card text-center d-block p-4 m-2 bg-warning-pastel text-dark rounded">
+          UiPath Academy Automation Explorer Training
+        </a>
+        <a href="https://www.udemy.com/certificate/UC-71e237af-914b-409c-a783-1d5ad592d3f5/" class="certification-card text-center d-block p-4 m-2 bg-info-pastel text-dark rounded">
+          Complete Introduction to Power BI Query Editor
+        </a>
+        <a href="https://www.udemy.com/certificate/UC-efdd078a-bac1-401a-b08a-9c7327e831f6/" class="certification-card text-center d-block p-4 m-2 bg-purple-pastel text-dark rounded">
+          The Complete Hands-On Introduction to Apache-Airflow
+        </a>
+        <a href="https://www.udemy.com/certificate/UC-b1444a6c-10aa-4829-81fd-5b8e77713053/" class="certification-card text-center d-block p-4 m-2 bg-teal-pastel text-dark rounded">
+          Apache Airflow: The Hands-On Guide
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /certificari -->
+
+
+<!-- footer -->
+<footer class="bg-dark footer-section py-4">
+  <div class="container">
+    <div class="row">
+      <!-- Navigation Links -->
+      <div class="col-md-4 col-12 text-center mb-4 mb-md-0">
+        <h5 class="text-light">Pagini</h5>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-white" href="index.html">Home</a></li>
+          <li class="mb-3"><a class="text-white" href="about.html">About</a></li>
+          <li class="mb-3"><a class="text-white" href="portfolio.html">Portfolio</a></li>
+          <li class="mb-3"><a class="text-white" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Social Links and Logo -->
+      <div class="col-md-4 col-12 text-center mb-4 mb-md-0">
+        <img src="images/favicon.png" alt="Myself" style="width: 125px; height: auto;" class="mb-3">
+        <ul class="list-inline social-icons">
+          <li class="list-inline-item"><a class="text-white" href="https://ro.linkedin.com/in/denisa-cire%C8%99an-973750267"><i class="ti-linkedin"></i></a></li>
+          <li class="list-inline-item"><a class="text-white" href="https://ro.pinterest.com/denisa_ciresan/"><i class="ti-pinterest"></i></a></li>
+          <li class="list-inline-item"><a class="text-white" href="mailto:ciresan.denisa14@gmail.com"><i class="ti-email"></i></a></li>
+        </ul>
+      </div>
+      <!-- To Top Button -->
+      <div class="col-md-4 col-12 text-md-right text-center">
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="btn btn-primary mt-4">To Top</button>
+      </div>
+    </div>
+  </div>
+  <div class="border-top text-center border-dark py-3">
+    <p class="mb-0 text-light">Copyright ©<script>
+        var CurrentYear = new Date().getFullYear();
+        document.write(CurrentYear);
+      </script> Denisa Cireșan</p>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- filter -->
+<script src="plugins/shuffle/shuffle.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
